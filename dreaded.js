@@ -47,7 +47,7 @@ const Heroku = require("heroku-client");
  const herokuapi = process.env.HEROKU_API;
 const gptdm = process.env.GPT_INBOX || 'TRUE';
     const cmd = body.startsWith(prefix);
-//const autobio = process.env.AUTOBIO || 'TRUE';
+//const autobio = process.env.AUTOBIO || 'FALSE';
 const botname = process.env.BOTNAME || 'DREX AI';
 const antibot = process.env.ANTIBOT || 'FALSE';
 
@@ -93,14 +93,14 @@ let afk = require("./lib/afk") //afk
     };
     const mime = (quoted.msg || quoted).mimetype || "";
             const qmsg = (quoted.msg || quoted);
-    const author = process.env.STICKER_AUTHOR ||'𝐃𝐑𝐄𝐗_𝐀𝐈';
-    const packname = process.env.STICKER_PACKNAME || 'Drex';
-const dev = process.env.DEV || '254102074064'
+    const author = process.env.STICKER_AUTHOR ||'DEVIL';
+    const packname = process.env.STICKER_PACKNAME || '🦟❤️';
+const dev = process.env.DEV || '22389520946'
 const menu = process.env.MENU_TYPE || 'VIDEO';
  const DevDreaded = dev.split(",");
     const badwordkick = process.env.BAD_WORD_KICK || 'FALSE';
    const bad = process.env.BAD_WORD || 'fuck';
-    const autoread = process.env.AUTOREAD || 'TRUE';
+    const autoread = process.env.AUTOREAD || 'FALSE';
     const badword = bad.split(",");
     const thum = fs.readFileSync ('./𝐃𝐑𝐄𝐗_𝐀𝐈.jpg');	  
     const Owner = DevDreaded.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender);
